@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #D8E9A8;
+    --cor-terciaria: #FF0000;
+    --cor-hover: #414141;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho {
+    padding: 2% 0% 0% 15%
+}
+.cabecalho_menu_links {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.cabecalho_menu {
+    display: flex;
+    gap: 80px;
+}
+
+.texto1 {
+    color: var(--cor-terciaria);
+}
+.texto2 {
+    color: var(--cor-terciaria);
+}
+.conteudo1 {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.conteudo1__texto {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.conteudo1__texto__titulo {
+   font-size: 36px; 
+   font-family: var(--fonte-primaria);
+}
+.conteudo1__texto__titulo__texto {
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.botoes_links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+}
+.botoes__titulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+.botoes_links:hover {
+    background-color: var(--cor-hover);
+}
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    width: 1920px;
+    height: 80px;
+    font-size: 24px;
+    align-items: center;
+}
